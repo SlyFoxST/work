@@ -1,0 +1,135 @@
+@import "bourbon"
+
+@media only screen and (max-width : 1200px)
+    .triangles-cntainer .ts-item
+    	margin-bottom: 60px
+    .phone
+    	text-align: left
+    .menu
+    	display: none
+    	position: absolute
+    	text-align: center
+    	width: 100%
+    	z-index: 1
+    	ul
+    		li
+    			display: block
+    			border-bottom: 1px solid #97a4b2
+    			&:last-child
+    				border: none
+    			&:hover
+    				background: #57708c
+  
+    .menu
+    	a
+    		background-color: transparent
+    	
+@media only screen and (max-width : 992px)
+        .section_3 .item-section .wraper-item-darck, .section_3 .item-section2 .wraper-item-darck
+        	margin-left: 0px
+        .s1_bottom_triangle
+        	background-size: cover
+        .header-wrapper h1
+        	margin: 0px
+        .card
+            margin-top: 10px 	
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.info-item
+		border-bottom: none
+		text-align: center
+		max-width: 100%
+		padding-left: 0px
+	.head-section
+		margin-bottom: 0px
+	.head-section h3
+		margin-bottom: 80px
+	.wraper-wraper-folder
+		display: none
+	.section_3
+		background: none
+	.item-section2
+		text-align: center
+	.item-section
+		text-align: center
+	.section_3 .item-section:nth-child(2)
+		margin-top: 0px !important
+	.section_3 .item-section .wraper-item-darck, .section_3 .item-section2 .wraper-item-darck
+		width: 100%
+		margin-left: 0px
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.phone
+		text-align: left
+		margin-right: 5px
+		a
+			font-size: 14px
+	.logo
+		margin: 20px auto
+
+	.header-wrapper
+		margin-top: 30px
+	.info-item-wrap2
+		.info-item
+			border-bottom: none
+	.wraper-item2
+		width: 100%
+	.wraper-item2
+		margin: 0px 0px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.card
+		display: block
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+    /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+	/**/
+
+@media only screen and (min-width : 1200px)
+   .menu
+   	  display: block !important

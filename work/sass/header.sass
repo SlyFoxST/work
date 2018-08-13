@@ -1,0 +1,321 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: 22px
+	font-family: "RalewayRegular", sans-serif
+	overflow-x: hidden
+	color: #333
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video  
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+//Custom Styles Here 
+
+h1
+	font-family: RalewayRegular
+a
+ color: $akcent
+ text-decoration: none
+ &:hover,&:visited
+   color: $akcent
+   text-decoration: none
+.active
+  color: $akcent
+.before
+  content: "";
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  background-color: #394b5f
+  opacity: 0.85
+
+.header 
+  font-family: PFCentroSlabProMedium, $verdana
+  text-transform: uppercase
+  color: $color-header
+  padding-bottom: 120px
+  background-size: cover
+  background-position: center;
+  position: relative
+  &::before
+  	@extend .before
+.header h1
+	color: #fff
+h1
+	font-size: 48px
+	text-transform: none
+h2
+	font-size: 30px
+h3
+	font-size: 24px
+b, strong
+	font-family: RalewayBold, $verdana
+.top-line
+	padding-top: 45px
+	min-height: 160px
+	background-image: url(../img/top_gradient.png)
+	background-repeat: repeat-x
+.menu
+	font-size: 14px
+	font-family: RalewayRegular
+	ul
+		li
+			display: inline-block
+			text-transform: none
+			margin: 0px
+			padding: 0px 11px
+			line-height: 48px
+			a,
+			a:hover
+			  color: $akcent
+			  text-decoration: none
+.menu
+	ul
+		li
+			a
+				color: #fff
+
+.logo
+    width: 100px
+.phone
+	text-align: right
+.phone
+	a
+      opacity: 0.95
+      color: #fff
+      font-family: RobotoBoldr,$verdana
+      font-size: 17px	
+      line-height: 48px
+      text-align: right
+.btn
+  float: right
+  position: absolute
+  right: 0
+  top: 0
+  display: block
+  width: 35px
+  height: 35px
+  text-align: center
+  margin-top: 10px
+.wrapper-btn
+  position: relative
+.toggle_mnu span
+  width: 35px
+  position: relative
+  height: 2px
+  background: #eee
+  display: block
+  &::before
+    width: 35px
+    content: " "
+    background: #eee
+    display: block
+    height: 2px
+    position: absolute
+    margin: 10px 0px
+    transition: all 0.75s ease
+  &::after
+    width: 35px
+    content: " "
+    background: #eee
+    display: block
+    height: 2px
+    position: absolute
+    margin: 20px 0px 
+.on span
+  width: 0px
+  margin: 10px 0px
+  &::before
+    transform: rotate(40deg)
+    margin: 0px
+    opacity: 0.8
+  &::after
+    transform: rotate(-40deg)
+    margin: 0px
+    opacity: 0.8
+.show
+  display: block
+  background: #394b5f
+  text-align: right
+.hidden
+	display: none
+.header-wrapper
+	margin-top: 80px
+	h1
+		margin-top: 120px
+		color: #fff
+		border-bottom: $akcent solid 8px
+		display: inline-block
+		padding-bottom: 16px
+.list-header
+	margin-top: 40px
+.list-header li
+	display: block
+	position: relative
+	padding-left: 18px
+	&::before
+		display: block
+		content: " "
+		width: 6px
+		height: 11px
+		+triangle(12px, $akcent, right)
+		position: absolute
+		top: 12px
+		left: 0
+	a
+		text-decoration: none
+		font-family: RalewayRegular
+		font-size: 18px
+		text-transform: lowercase
+		color: #fff
+		line-height: 2
+		&:hover
+			text-decoration: underline
+			color: $akcent
+			text-decoration: none
+.forms
+	background-color: rgba(24,33,43,0.7)
+	padding: 30px 35px
+	color: #97a4b2
+	font-size: 13px
+	border-bottom: 4px solid #0d1723
+	.sub
+		margin: 20px 0px
+
+	h4
+		color: #fff
+		font-family: PFCentroSlabProMedium, $verdana
+		font-size: 30px
+		text-transform: none
+		margin-bottom: 10px
+	p
+		text-transform: none
+		line-height: 1.6
+input
+	border: none
+label
+	margin: 10px 0px
+	display: block
+	font-size: 13px
+	text-transform: none
+	margin: 10px 0px
+	span
+		font-size: 13px
+		line-height: 1.6
+		dislpay: block
+	input
+	    width: 100%
+	    font-size: 13px	
+	    box-shadow:  inset 0px 6px 2px #1f2a36 
+	    background-color: #34465a
+	    text-indent: 10px
+	    padding: 5px 0px
+	    background-color: #596c82 !important
+	    height: 40px
+	    outline: none
+	    &:focus
+	    	box-shadow:  inset 0px 6px 4px #1f2a36 
+	    	background-color: #596c82
+.header-left
+	margin-bottom: 40px
+.sub
+	background: $akcent
+	color: #111
+	font-family: "PFCentroSlabProBold"
+	padding: 12px 25px
+	display: inline-block
+	border-bottom: 3px solid #ca820f
+	outline: none
+	&:hover
+		background: #efb14f
+	&:active
+		background: #bd7d15
+.btn-wrap
+	text-align: center
+	margin: 20px 0px 0px 0px
+.arrow
+	background-image: url(../img/arrow_down.png);
+	display: inline-block
+	width: 40px
+	height: 40px
+	cursor: pointer
+	z-index: 1
+.arrow-wrap
+	@extend .btn-wrap
+	position: relative
+	top: 50px
+	opacity: 0.5
+	transition: opacity 0.75s ease
+	&:hover
+		opacity: 1

@@ -1,0 +1,436 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+table
+  width: 100%
+table
+
+  border: #ccc solid 1px;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+
+table caption
+
+  font-size: 1.3em;
+  margin: 0.5em 0 0.75em;
+
+table tr
+
+  background: #f8f8f8;
+  border: #ddd solid 1px;
+  padding: 0.35em;
+
+table th, table td
+
+  padding: 0.625em;
+  text-align: center;
+
+
+.homesection
+  background-color: #f9f9f9
+  font-size: PFCentroSlabProMedium
+  padding-top: 70px
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    background: url('../img/bah_1.png')
+    width: 100%
+    height: 6px
+    top: -6px
+.head-section
+  margin-bottom: 80px
+  p
+    margin-top: 60px
+    font-family: RobotoRegular
+    text-align: center
+  h3
+    font-size: 24px
+    text-align: center
+    margin-top: 53px
+    text-transform: uppercase
+    span
+      color: $akcent
+      text-decoration: underline
+  h2
+    text-align: center
+    position: relative
+    text-transform: uppercase
+    font-family: "PFCentroSlabProMedium",$verdana
+    &:after
+      position: absolute
+      content: " "
+      background-color: $akcent
+      height: 3px
+      width: 165px
+      display: block
+      left: 50%
+      bottom: -34px
+      transform: translate(-50%, 0px)
+
+.section-bottom
+  background: #2c3949
+  padding: 50px 0px
+  text-align: center
+  font-size: 13px
+  a
+    color: #111
+
+.section-content
+   min-height: 320px
+.section_1
+   background-image: url(../img/s1_gray_bg.png)
+   background-position: bottom
+   background-repeat: no-repeat 
+   min-height: 548px
+   position: relative
+.s1_bottom_triangle
+  height: 90px
+  bottom: 0
+  width: 100%
+  background-image: url(../img/s1_triangle.svg)
+  background-position: top 
+  bacground-size: 100% 100%
+  text-align: center
+.s1_bottom
+  padding: 15px 0px 65px 0px
+  background: #394b5f
+.info-item-wrap
+  margin: 50px 0px
+.info-item
+  max-width: 264px
+  padding-left: 34px
+  border-bottom: 2px solid #eee
+  margin: 0px 0px
+  h4
+    a
+      font-family: PFCentroSlabProMedium
+      font-size: 24px 
+      text-decoration: underline
+  p
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    margin: 23px 0px
+.info-item-wrap:nth-child(2)
+  margin: 0px
+.triangl-logo
+  opacity: 0.5
+  margin: 30px 0px 
+.scales
+  position: absolute
+  left: 50%
+  top: 76%
+  width: 170px
+  transform: translate(-50%, -70%)
+.info-item-wrap2
+  .info-item
+    border-bottom: 1px solid #546476
+  p
+    color: #fff
+.info-item-wrap2:nth-child(2)
+  margin-top: 40px
+
+.section-2
+  .wraper-item2
+    p
+      a
+        color: #000
+        &:hover
+          text-decoration: underline
+
+    .wraper-img
+      position: relative
+      margin-bottom: 40px
+      &:after
+        content: ""
+        height: 2px
+        display: block
+        width: 58px
+        background: $akcent
+        position: absolute
+        left: 50%
+        bottom: 0%
+        transform: translate(-50%,0%)
+    img
+      max-width: 97px
+      max-height: 80px
+      margin-bottom: 40px
+.wraper-item2
+  position: relative
+  width: 150px
+  text-align: center
+  display: inline-block
+  margin: 20px 15px
+.wrapper-section2-2
+  margin: 75px 0px 100px 0px
+.section-2
+  .section-bottom
+    background: #e5e5e5
+.homesection2, .section_5
+  padding-top: 70px
+  background: #2c3949
+  color: #fff
+  position: relative
+  &:before
+    content: ""
+    height: 11px
+    position: absolute
+    background-repeat: repeat-y
+    width: 100%
+    top: -6px
+    background: url(../img/bah_2.png)
+.section_3
+
+  background: url(../img/s3_sun_bg.png)
+  background-repeat: no-repeat
+  background-position: top
+  position: relative
+  .section-bottom
+    background: #394b5f
+    margin-top: 70px
+  .item-section,.item-section2
+    margin: 56px 0px
+    .wraper-item-darck
+      margin-left: 90px
+      width: 200px
+      h5
+        font-family: PFCentroSlabProMedium
+        font-size: 24px
+        text-decoration: underline
+      p
+        margin: 25px 0px
+  .item-section:nth-child(2)
+    margin-top: -40px
+.wraper-folder
+  background: $akcent
+  padding: 26px 
+  border-radius: 50%
+  img
+    width: 72px
+.wraper-wraper-folder
+  position: absolute
+  top: 40%
+  left: 50%
+  transform: translate(-50%,-40%)
+  padding: 20px
+.wrap-container
+  padding: 40px
+.h5-darck-castom
+  margin-top: 80px
+.section_4
+  background: #e5e5e5
+  position: relative
+  &:before
+    content: ""
+    background: url(../img/bah_3.png)
+    height: 8px
+    width: 100%
+    top: -6px
+    display: block
+    position: absolute
+    background-repeat: repeat-x
+  h3
+    color: #394b5f
+  h2
+    color: #2c3949
+    font-family: "PFCentroSlabProMedium", $verdana
+  .head-section
+    margin-top: 90px
+  .section-bottom
+    background: #d6d6d6
+    margin-top: 70px
+.cards
+  text-align: center
+  perspective: 600px
+  span
+    color: $akcent
+.card
+  background: #2c3949
+  width: 260px
+  display: inline-block
+  margin: 0px 15px
+  font-size: 14px
+  padding: 55px 28px 52px 28px
+  vertical-align: top
+  transition: all 1s ease
+  opacity: .2
+  &-off
+    transform: rotateY(100deg)
+  &-on
+    opacity: 1
+    transform: rotateY(0deg)
+  h4
+    font-size: 16px
+    color: #dcdcdd
+    text-transform: uppercase
+    font-family: RalewayBold, $verdana
+    margin: 40px 0px 30px 0px
+  p
+    color: #8c99a6
+    font-family: RalewayRegular, $verdana
+    font-size: 14px
+    line-height: 1.2
+    height: 70px
+    overflow: hidden
+  .card-icon
+    background: $akcent
+    width: 122px
+    display: inline-block
+    height: 122px
+    border-radius: 10em
+    line-height: 150px
+    img
+      width: 75px
+.icon-card
+  line-height: 180px !important
+.section_5
+  .section-bottom
+    background: #596c82
+  .head-section
+    margin: 0px
+    h2
+      text-align: left
+      &:after
+        content: " "
+        position: absolute
+        backgrund-color: #f39f18
+        height: 3px
+        width: 165px
+        display: block
+        left: 0px
+        bottom: -24px
+        transform: translate(0px, 24px)
+.triangles-cntainer
+  color: #fff
+  font-family: "PFCentroSlabProMedium"
+  font-size: em(15px)
+  margin: 60px 0px 100px 0px 
+  padding: 0px 
+  text-align: center
+  .ts-item
+    width: 290px
+    display: inline-block
+    position: relative
+    margin-left: -35px
+    vertical-align: top
+    .tc-svg
+      position: absolute
+      top: 0
+      left: 0
+      &:hover
+        transform: scale(1.09);
+        z-index: 1
+        path
+          fill-opacity: 0 !important
+          stroke-opacity: 1 !important
+    .tc-content
+      position: relative
+      z-index: 1
+      margin-top: 26px
+      margin-left: 18px
+      &:last-child
+        margin: 0px
+      img
+        width: 33px
+        margin: 0px 10px
+.card-item
+  padding: 40px 10px
+  @extend .card
+  opacity: 1
+  background: silver
+  h4
+    color: #000
+  p
+    color: #546476
+    margin: 0px
+    height: 40px
+  span
+    font-weight: 600
+    font-size: 14px
+    font-family: RobotoRegular, $verdana
+    color: #34465a
+    margin: 10px 0px
+  .card-icon
+    width: 170px
+    padding: 11px
+    display: inline-block
+    height: 170px
+    border-radius: 10em
+    background: #a9a0a0
+    img
+      width: 150px
+      border-radius: 10em
+.wrapper-card
+  padding-bottom: 70px
+  @extend .cards
+.slider
+  .slide
+    text-align: center
+    h3
+      margin-top: 30px
+      font-size: 18px
+      font-family: RalewayBold
+    .slide-description
+      margin: 29px 0px 35px 0px
+      font-family: RalewayRegular
+      font-size: 13px
+    p
+      font-size: 14px
+      font-family: RalewayRegular
+  .wraper-img
+    img
+      width: 116px
+      height: 116px
+      display: inline-block
+      border-radius: 10em
+      box-shadow:  0 0 0 6px  $akcent
+
+.section_7
+  padding-bottom: 70px
+  @extend .section_4
+//ALWAYS END
+@import "media"
+@media screen and (max-width:600px)
+
+table
+
+  border: 0;
+
+table caption
+
+  font-size: 1.3em;
+
+table thead
+
+  display: none;
+
+table tr
+
+  border-bottom: 3px solid #ddd;
+  display: block;
+  margin-bottom: 0.625em;
+
+table td
+
+  border-bottom: 1px solid #ddd;
+  display: block;
+  text-align: right;
+
+table td:before
+
+  content: attr(aria-label);
+  float: left;
+  font-weight: bold;
+
+table td:last-child
+
+  border-bottom: 0;
+
+  
